@@ -42,28 +42,27 @@
 	
 		<!-- Home -->
 		<div data-role="page" id="page1" data-theme="a">
-			<div data-theme="a" data-role="header" data-position="fixed">
-				<h3>
-					ContrastRx
-				</h3>
-			</div>
-			<div data-role="content">
-				<a data-role="button" data-theme='g' data-transition="slide" href="#page2">
-					Premedication Strategy
-				</a>
-        <img src="apple-touch-icon-144x144.png" style="margin: 0 auto; display: block;"/>
-				<a data-role="button" data-theme='r' data-transition="slide" href="#page3">
-					Acute Reaction
-				</a>
-        <p style="text-align:center">
-          Content summarized from the ACR Manual on Contrast Media v7
-        </p>
-			</div>
-			<div data-theme="a" data-role="footer" data-position="fixed">
-				<h5>
-					dsk 2013
-				</h5>
-			</div>
+          <div data-theme="a" data-role="header" data-position="fixed">
+            <h3>
+              ContrastRx
+            </h3>
+          </div>
+          <div data-role="content">
+            <a data-role="button" data-theme='g' data-transition="slide" href="#page2">Premedication Strategy</a>
+            <img src="apple-touch-icon-144x144.png" style="margin: 0 auto; display: block;"/>
+            <a data-role="button" data-theme='r' data-transition="slide" href="#page3">Acute Reaction</a>
+            <p style="text-align:center">
+              Content summarized from the ACR Manual on Contrast Media v7
+            </p>
+            <p style="text-align:center">
+              <a href="#disclaimer">Medical Disclaimer</a>
+            </p>
+          </div>
+          <div data-theme="a" data-role="footer" data-position="fixed">
+            <h5>
+                dsk 2013
+            </h5>
+          </div>
 		</div>
 		
 		<!-- page2 -->
@@ -371,5 +370,19 @@
 				</ul>
 			</div>
 		</div>
+        <div data-role="page" id="disclaimer" data-theme="a">
+          <div data-theme="a" data-role="header" data-position="fixed">
+            <h3>
+              Medical Disclaimer
+            </h3>
+              <a data-role="button" data-direction="reverse" data-transition="slide"
+              href="#page1" data-icon="back" data-iconpos="left" class="ui-btn-left">Back</a>
+			</div>
+          <div data-role="content">
+            <p>Content is provided for educational purposes only, and is provided for use by medical professionals. It is not intended as, nor should it be, a substitute for independent professional medical care.</p>
+            <p>This application should in no way be seen as a replacement for consultation with colleagues and/or other sources. By using this application, you agree to use the information solely for your own educational purposes.</p>
+          </div>
+        </div>
+      </div>
 	</body>
 </html>
