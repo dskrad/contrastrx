@@ -1,6 +1,6 @@
 CACHE MANIFEST
  
-# Version: 1.4
+# Version: 1.5
 
 # Anything not cached will still load when online
 NETWORK:
@@ -14,7 +14,7 @@ jquery.mobile-1.3.0.min.css
 jquery.mobile-1.3.0.min.js
 http://code.jquery.com/jquery-1.7.2.min.js
 http://www.google-analytics.com/ga.js
-apple-touch-icon-144x144.png
+transparent-icon.png
 startup.png
 images/ajax-loader.gif
 images/icons-18-black.png
