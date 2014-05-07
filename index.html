@@ -57,20 +57,20 @@
 <body>
   <!-- Home -->
 
-  <div data-role="page" id="page1" data-theme="a">
+  <div data-role="page" id="main" data-theme="a">
     <div data-theme="a" data-role="header" data-position="fixed">
       <h3>ContrastRx</h3>
     </div>
 
 
     <div data-role="content">
-      <a data-role="button" data-theme='g' data-transition="slide" href= "#page2">Premedication Strategy</a> 
+      <a data-role="button" data-theme='g' data-transition="slide" href= "#premed">Premedication Strategy</a> 
       <img src="transparent-icon.png" style="margin: 0 auto; display: block;" /> 
       <a data-role="button" data-theme='r'
-        data-transition="slide" href="#page3">Acute Reaction</a>
+        data-transition="slide" href="#acute">Acute Reaction</a>
 
       <p style="text-align:center">
-      <small>Content summarized from the ACR Manual on Contrast Media v7</small>
+      <small>Content summarized from the ACR Manual on Contrast Media v9 (2013)</small>
       </p>
 
       <p style="text-align:center">
@@ -83,12 +83,12 @@
     </div>
   </div>
   
-  <!-- page2 -->
+  <!-- premed -->
 
-  <div data-role="page" id="page2" data-theme="a">
+  <div data-role="page" id="premed" data-theme="a">
     <div data-theme="a" data-role="header" data-position="fixed">
       <h3>Premedication</h3><a data-role="button" data-direction="reverse"
-        data-transition="slide" href="#page1" data-icon="back" data-iconpos="left" class=
+        data-transition="slide" href="#main" data-icon="back" data-iconpos="left" class=
         "ui-btn-left">Back</a>
     </div>
 
@@ -125,77 +125,76 @@
     </div>
   </div>
   
-  <!-- page3 -->
+  <!-- acute -->
 
-  <div data-role="page" id="page3" data-theme="a">
+  <div data-role="page" id="acute" data-theme="a">
     <div data-theme="a" data-role="header" data-position="fixed">
       <h3>Acute Reaction</h3><a data-role="button" data-direction="reverse"
-        data-transition="slide" href="#page1" data-icon="back" data-iconpos="left" class=
+        data-transition="slide" href="#main" data-icon="back" data-iconpos="left" class=
         "ui-btn-left">Back</a>
     </div>
 
     <div data-role="content">
       <ul data-role="listview" data-inset="false">
-        <li><a href="#urticaria" data-transition="slide">Urticaria</a></li>
-
-        <li><a href="#larynedema" data-transition="slide">Facial/Laryngeal Edema</a></li>
-
+        <li><a href="#hives" data-transition="slide">Hives</a></li>
+        <li><a href="#erythema" data-transition="slide">Diffuse Erythema</a></li>
         <li><a href="#bronchospasm" data-transition="slide">Bronchospasm</a></li>
-
-        <li><a href="#tachy" data-transition="slide">Hypotension w Tachycardia</a></li>
-
+        <li><a href="#larynedema" data-transition="slide">Facial/Laryngeal Edema</a></li>
         <li><a href="#brady" data-transition="slide">Hypotension w Bradycardia</a></li>
-
-        <li><a href="#htn" data-transition="slide">Hypertension, Severe</a></li>
-
-        <li><a href="#seizures" data-transition="slide">Seizures or Convulsions</a></li>
-
+        <li><a href="#tachy" data-transition="slide">Hypotension w Tachycardia</a></li>
+        <li><a href="#htn" data-transition="slide">Hypertensive Crisis</a></li>
+        <li><a href="#unresponsive" data-transition="slide">Unresponsive/Pulseless</a></li>
         <li><a href="#pulmedema" data-transition="slide">Pulmonary Edema</a></li>
+        <li><a href="#seizures" data-transition="slide">Seizures or Convulsions</a></li>
+        <li><a href="#hypoglycemia" data-transition="slide">Hypoglycemia</a></li>
+        <li><a href="#anxiety" data-transition="slide">Anxiety (Panic Attack)</a></li>
       </ul>
     </div>
   </div>
   
-  <!-- urticaria -->
+  <!-- erythema -->
 
-  <div data-role="page" id="urticaria" data-theme="a">
+  <div data-role="page" id="erythema" data-theme="a">
     <div data-theme="a" data-role="header" data-position="fixed">
       <h3>Acute Reaction</h3><a data-role="button" data-direction="reverse"
-        data-transition="slide" href="#page3" data-icon="back" data-iconpos="left" class=
+        data-transition="slide" href="#acute" data-icon="back" data-iconpos="left" class=
         "ui-btn-left">Back</a>
     </div>
 
     <div data-role="content">
-      <ul data-role="listview">
-        <li data-role="list-divider" role="heading">Urticaria</li>
+      <ol data-role="listview">
+        <li data-role="list-divider" role="heading">Diffuse Erythema</li>
 
-        <li>1. Discontinue injection if not completed</li>
+        <li>Discontinue injection if not completed</li>
 
-        <li>2. No treatment needed in most cases</li>
+        <li>No treatment needed in most cases</li>
 
-        <li>3. Give H1-receptor blocker: diphenhydramine (Benadryl &#174;) PO/IM/IV
+        <li>Give H1-receptor blocker: diphenhydramine (Benadryl &#174;) PO/IM/IV
         25 to 50 mg.</li>
 
         <li>If severe or widely disseminated: give alpha agonist (arteriolar and venous
         constriction): epinephrine SC (1:1,000) 0.1 to 0.3 ml (=0.1 to 0.3 mg) (if no
         cardiac contraindications).</li>
-      </ul>
+      </ol>
     </div>
-  </div><!-- larynedema -->
+  </div>
+  
+  <!-- larynedema -->
 
   <div data-role="page" id="larynedema" data-theme="a">
     <div data-theme="a" data-role="header" data-position="fixed">
       <h3>Acute Reaction</h3><a data-role="button" data-direction="reverse"
-        data-transition="slide" href="#page3" data-icon="back" data-iconpos="left" class=
+        data-transition="slide" href="#acute" data-icon="back" data-iconpos="left" class=
         "ui-btn-left">Back</a>
     </div>
 
     <div data-role="content">
-      <ul data-role="listview">
+      <ol data-role="listview">
         <li data-role="list-divider" role="heading">Facial or Laryngeal Edema</li>
 
-        <li>1. Give O2 6 to 10 liters/min (via mask).</li>
+        <li>Give O2 6 to 10 liters/min (via mask).</li>
 
-        <li>2. Give alpha agonist (arteriolar and venous constriction): epinephrine SC or
+        <li>Give alpha agonist (arteriolar and venous constriction): epinephrine SC or
         IM (1:1,000) 0.1 to 0.3 ml (=0.1 to 0.3 mg) or, especially if hypotension
         evident, epinephrine (1:10,000) slowly IV 1 to 3 ml (=0.1 to 0.3 mg).</li>
 
@@ -203,32 +202,34 @@
 
         <li>If not responsive to therapy or if there is obvious acute laryngeal edema,
         seek appropriate assistance (e.g., cardiopulmonary arrest response team).</li>
-      </ul>
+      </ol>
     </div>
-  </div><!-- bronchospasm -->
+  </div>
+  
+  <!-- bronchospasm -->
 
   <div data-role="page" id="bronchospasm" data-theme="a">
     <div data-theme="a" data-role="header" data-position="fixed">
       <h3>Acute Reaction</h3><a data-role="button" data-direction="reverse"
-        data-transition="slide" href="#page3" data-icon="back" data-iconpos="left" class=
+        data-transition="slide" href="#acute" data-icon="back" data-iconpos="left" class=
         "ui-btn-left">Back</a>
     </div>
 
     <div data-role="content">
-      <ul data-role="listview">
+      <ol data-role="listview">
         <li data-role="list-divider" role="heading">Bronchospasm</li>
 
-        <li>1. Give O2 6 to 10 liters/min (via mask).</li>
+        <li>Give O2 6 to 10 liters/min (via mask).</li>
 
         <li>Monitor: electrocardiogram, O2 saturation (pulse oximeter), and blood
         pressure.</li>
 
-        <li>2. Give beta-agonist inhalers (bronchiolar dilators, such as metaproterenol
+        <li>Give beta-agonist inhalers (bronchiolar dilators, such as metaproterenol
         [Alupent &#174;], terbutaline [Brethaire &#174;], or albuterol
         [Proventil &#174; or Ventolin &#174;]) 2 to 3 puffs; repeat as
         necessary. If unresponsive to inhalers, use SC, IM, or IV epinephrine.</li>
 
-        <li>3. Give epinephrine SC or IM (1:1,000) 0.1 to 0.3 ml (=0.1 to 0.3 mg) or,
+        <li>Give epinephrine SC or IM (1:1,000) 0.1 to 0.3 ml (=0.1 to 0.3 mg) or,
         especially if hypotension evident, epinephrine (1:10,000) slowly IV 1 to 3 ml
         (=0.1 to 0.3 mg).</li>
 
@@ -236,29 +237,31 @@
 
         <li>Call for assistance (e.g., cardiopulmonary arrest response team) for severe
         bronchospasm or if O2 saturation &lt; 88% persists.</li>
-      </ul>
+      </ol>
     </div>
-  </div><!-- tachy -->
+  </div>
+  
+  <!-- tachy -->
 
   <div data-role="page" id="tachy" data-theme="a">
     <div data-theme="a" data-role="header" data-position="fixed">
       <h3>Acute Reaction</h3><a data-role="button" data-direction="reverse"
-        data-transition="slide" href="#page3" data-icon="back" data-iconpos="left" class=
+        data-transition="slide" href="#acute" data-icon="back" data-iconpos="left" class=
         "ui-btn-left">Back</a>
     </div>
 
     <div data-role="content">
-      <ul data-role="listview">
+      <ol data-role="listview">
         <li data-role="list-divider" role="heading">Hypotension with Tachycardia</li>
 
-        <li>1. Legs elevated 60 degrees or more (preferred) or Trendelenburg
+        <li>Legs elevated 60 degrees or more (preferred) or Trendelenburg
         position.</li>
 
-        <li>2. Monitor: electrocardiogram, pulse oximeter, blood pressure.</li>
+        <li>Monitor: electrocardiogram, pulse oximeter, blood pressure.</li>
 
-        <li>3. Give O2 6 to 10 liters/min (via mask).</li>
+        <li>Give O2 6 to 10 liters/min (via mask).</li>
 
-        <li>4. Rapid intravenous administration of large volumes of Ringer's lactate or
+        <li>Rapid intravenous administration of large volumes of Ringer's lactate or
         normal saline.</li>
 
         <li>If poorly responsive: epinephrine (1:10,000) slowly IV 1 ml (=0.1 mg)</li>
@@ -267,130 +270,216 @@
 
         <li>If still poorly responsive seek appropriate assistance (e.g., cardiopulmonary
         arrest response team).</li>
-      </ul>
+      </ol>
     </div>
-  </div><!-- brady -->
+  </div>
+  
+  <!-- brady -->
 
   <div data-role="page" id="brady" data-theme="a">
     <div data-theme="a" data-role="header" data-position="fixed">
       <h3>Acute Reaction</h3><a data-role="button" data-direction="reverse"
-        data-transition="slide" href="#page3" data-icon="back" data-iconpos="left" class=
+        data-transition="slide" href="#acute" data-icon="back" data-iconpos="left" class=
         "ui-btn-left">Back</a>
     </div>
 
     <div data-role="content">
-      <ul data-role="listview">
+      <ol data-role="listview">
         <li data-role="list-divider" role="heading">Hypotension with Bradycardia (Vagal
         Reaction)</li>
 
-        <li>1. Secure airway: give O2 6 to 10 liters/min (via mask)</li>
+        <li>Secure airway: give O2 6 to 10 liters/min (via mask)</li>
 
-        <li>2. Monitor vital signs.</li>
+        <li>Monitor vital signs.</li>
 
-        <li>3. Legs elevated 60 degrees or more (preferred) or Trendelenburg
+        <li>Legs elevated 60 degrees or more (preferred) or Trendelenburg
         position.</li>
 
-        <li>4. Secure IV access: rapid administration of Ringer's lactate or normal
+        <li>Secure IV access: rapid administration of Ringer's lactate or normal
         saline.</li>
 
-        <li>5. Give atropine 0.6 to 1 mg IV slowly if patient does not respond quickly to
+        <li>Give atropine 0.6 to 1 mg IV slowly if patient does not respond quickly to
         steps 2 to 4.</li>
 
-        <li>6. Repeat atropine up to a total dose of 0.04 mg/kg (2 to 3 mg) in
+        <li>Repeat atropine up to a total dose of 0.04 mg/kg (2 to 3 mg) in
         adult.</li>
 
-        <li>7. Ensure complete resolution of hypotension and bradycardia prior to
+        <li>Ensure complete resolution of hypotension and bradycardia prior to
         discharge.</li>
-      </ul>
+      </ol>
     </div>
-  </div><!-- htn -->
+  </div>
+  
+  <!-- htn -->
 
   <div data-role="page" id="htn" data-theme="a">
     <div data-theme="a" data-role="header" data-position="fixed">
       <h3>Acute Reaction</h3><a data-role="button" data-direction="reverse"
-        data-transition="slide" href="#page3" data-icon="back" data-iconpos="left" class=
+        data-transition="slide" href="#acute" data-icon="back" data-iconpos="left" class=
         "ui-btn-left">Back</a>
     </div>
 
     <div data-role="content">
-      <ul data-role="listview">
+      <ol data-role="listview">
         <li data-role="list-divider" role="heading">Hypertension, Severe</li>
 
-        <li>1. Give O2 6 to 10 liters/min (via mask).</li>
+        <li>Give O2 6 to 10 liters/min (via mask).</li>
 
-        <li>2. Monitor electrocardiogram, pulse oximeter, blood pressure.</li>
+        <li>Monitor electrocardiogram, pulse oximeter, blood pressure.</li>
 
-        <li>3. Give nitroglycerine 0.4 mg tablet, sublingual (may repeat &#206;&#167; 3);
+        <li>Give nitroglycerine 0.4 mg tablet, sublingual (may repeat &#206;&#167; 3);
         or, topical 2% ointment, apply 1 inch strip.</li>
 
-        <li>4. If no response, consider labetalol 20 mg IV, then 20 to 80 mg IV every 10
+        <li>If no response, consider labetalol 20 mg IV, then 20 to 80 mg IV every 10
         minutes up to 300 mg.</li>
 
-        <li>5. Transfer to intensive care unit or emergency department.</li>
+        <li>Transfer to intensive care unit or emergency department.</li>
 
-        <li>6. For pheochromocytoma: phentolamine 5 mg IV. (may use labetalol if
+        <li>For pheochromocytoma: phentolamine 5 mg IV. (may use labetalol if
         phentolamine is not available)</li>
-      </ul>
+      </ol>
     </div>
-  </div><!-- seizures -->
+  </div>
+  
+  <!-- seizures -->
 
   <div data-role="page" id="seizures" data-theme="a">
     <div data-theme="a" data-role="header" data-position="fixed">
       <h3>Acute Reaction</h3><a data-role="button" data-direction="reverse"
-        data-transition="slide" href="#page3" data-icon="back" data-iconpos="left" class=
+        data-transition="slide" href="#acute" data-icon="back" data-iconpos="left" class=
         "ui-btn-left">Back</a>
     </div>
 
     <div data-role="content">
-      <ul data-role="listview">
+      <ol data-role="listview">
         <li data-role="list-divider" role="heading">Seizures or Convulsions</li>
 
-        <li>1. Give O2 6 to 10 liters/min (via mask).</li>
+        <li>Give O2 6 to 10 liters/min (via mask).</li>
 
-        <li>2. Consider diazepam (Valium &#174;) 5 mg IV (or more, as appropriate)
+        <li>Consider diazepam (Valium &#174;) 5 mg IV (or more, as appropriate)
         or midazolam (Versed &#174;) 0.5 to 1 mg IV.</li>
 
-        <li>3. If longer effect needed, obtain consultation; consider phenytoin
+        <li>If longer effect needed, obtain consultation; consider phenytoin
         (Dilantin &#174;) infusion - 15 to 18 mg/kg at 50 mg/min.</li>
 
-        <li>4. Careful monitoring of vital signs required, particularly of pO2 because of
+        <li>Careful monitoring of vital signs required, particularly of pO2 because of
         risk to respiratory depression with benzodiazepine administration.</li>
 
-        <li>5. Consider using cardiopulmonary arrest response team for intubation if
+        <li>Consider using cardiopulmonary arrest response team for intubation if
         needed.</li>
-      </ul>
+      </ol>
     </div>
-  </div><!-- pulmedema -->
+  </div>
+  
+  <!-- pulmedema -->
 
   <div data-role="page" id="pulmedema" data-theme="a">
     <div data-theme="a" data-role="header" data-position="fixed">
       <h3>Acute Reaction</h3><a data-role="button" data-direction="reverse"
-        data-transition="slide" href="#page3" data-icon="back" data-iconpos="left" class=
+        data-transition="slide" href="#acute" data-icon="back" data-iconpos="left" class=
         "ui-btn-left">Back</a>
     </div>
 
     <div data-role="content">
-      <ul data-role="listview">
+      <ol data-role="listview">
         <li data-role="list-divider" role="heading">Pulmonary Edema</li>
 
-        <li>1. Give O2 6 to 10 liters/min (via mask).</li>
+        <li>Give O2 6 to 10 liters/min (via mask).</li>
 
-        <li>2. Elevate torso.</li>
+        <li>Elevate torso.</li>
 
-        <li>3. Give diuretics: furosemide (Lasix &#174;) 20 to 40 mg IV, slow
+        <li>Give diuretics: furosemide (Lasix &#174;) 20 to 40 mg IV, slow
         push.</li>
 
-        <li>4. Consider giving morphine (1 to 3 mg IV).</li>
+        <li>Consider giving morphine (1 to 3 mg IV).</li>
 
-        <li>5. Transfer to intensive care unit or emergency department.</li>
-      </ul>
+        <li>Transfer to intensive care unit or emergency department.</li>
+      </ol>
     </div>
   </div>
+
+  <!-- hypoglycemia -->
+
+  <div data-role="page" id="hypoglycemia" data-theme="a">
+    <div data-theme="a" data-role="header" data-position="fixed">
+      <h3>Acute Reaction</h3><a data-role="button" data-direction="reverse"
+        data-transition="slide" href="#acute" data-icon="back" data-iconpos="left" class=
+        "ui-btn-left">Back</a>
+    </div>
+
+    <div data-role="content">
+      <ol data-role="listview">
+        <li data-role="list-divider" role="heading">Hypoglycemia</li>
+        
+        <li></li>
+      
+      </ol>
+    </div>
+  </div>
+
+  <!-- unresponsive -->
+
+  <div data-role="page" id="unresponsive" data-theme="a">
+    <div data-theme="a" data-role="header" data-position="fixed">
+      <h3>Acute Reaction</h3><a data-role="button" data-direction="reverse"
+        data-transition="slide" href="#acute" data-icon="back" data-iconpos="left" class=
+        "ui-btn-left">Back</a>
+    </div>
+
+    <div data-role="content">
+      <ol data-role="listview">
+        <li data-role="list-divider" role="heading">Unresponsive/Pulseless</li>
+        
+        <li></li>
+      
+      </ol>
+    </div>
+  </div>
+
+  <!-- anxiety -->
+
+  <div data-role="page" id="anxiety" data-theme="a">
+    <div data-theme="a" data-role="header" data-position="fixed">
+      <h3>Acute Reaction</h3><a data-role="button" data-direction="reverse"
+        data-transition="slide" href="#acute" data-icon="back" data-iconpos="left" class=
+        "ui-btn-left">Back</a>
+    </div>
+
+    <div data-role="content">
+      <ol data-role="listview">
+        <li data-role="list-divider" role="heading">Anxiety (Panic Attack)</li>
+        
+        <li></li>
+      
+      </ol>
+    </div>
+  </div>
+
+  <!-- hives -->
+
+  <div data-role="page" id="hives" data-theme="a">
+    <div data-theme="a" data-role="header" data-position="fixed">
+      <h3>Acute Reaction</h3><a data-role="button" data-direction="reverse"
+        data-transition="slide" href="#acute" data-icon="back" data-iconpos="left" class=
+        "ui-btn-left">Back</a>
+    </div>
+
+    <div data-role="content">
+      <ol data-role="listview">
+        <li data-role="list-divider" role="heading">Hives</li>
+        
+        <li></li>
+      
+      </ol>
+    </div>
+  </div>
+  
+  <!--disclaimer-->
 
   <div data-role="page" id="disclaimer" data-theme="a">
     <div data-theme="a" data-role="header" data-position="fixed">
       <h3>Medical Disclaimer</h3><a data-role="button" data-direction="reverse"
-        data-transition="slide" href="#page1" data-icon="back" data-iconpos="left" class=
+        data-transition="slide" href="#main" data-icon="back" data-iconpos="left" class=
         "ui-btn-left">Back</a>
     </div>
 
