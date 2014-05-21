@@ -80,3 +80,7 @@
 li {
   font-weight: normal !important;
 }
+
+li.ui-li.ui-li-divider.ui-bar-b {
+  font-weight: bold !important;
+}
