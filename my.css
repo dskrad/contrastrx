@@ -1,4 +1,10 @@
 /* Put your custom CSS here */
+.ui-li-static {
+  overflow: visible !important;
+  text-overflow: none !important;
+  white-space: normal !important;
+}
+
 .ui-li-desc { margin: 0em; }
 
 /* data-theme='g' Green button */
